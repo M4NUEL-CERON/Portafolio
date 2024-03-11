@@ -1,16 +1,16 @@
 ---
-import "@fontsource-variable/onest"
+import "@fontsource-variable/onest";
 
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
-import { ViewTransitions } from "astro:transitions"
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 
 interface Props {
-  title: string
-  description: string
+  title: string;
+  description: string;
 }
 
-const { description, title } = Astro.props
+const { description, title } = Astro.props;
 ---
 
 <!doctype html>
@@ -43,6 +43,22 @@ const { description, title } = Astro.props
       html {
         font-family: "Onest Variable", system-ui, sans-serif;
         scroll-behavior: smooth;
+      }
+
+      * ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      * ::-webkit-scrollbar-track {
+        background: rgb(66, 66, 66);
+        /* color of the tracking area */
+        border-radius: 30px;
+      }
+
+      *::-webkit-scrollbar-thumb {
+        background-color: rgb(123, 123, 123);
+        /* color of the scroll thumb */
+        border-radius: 20px;
       }
 
       body {
