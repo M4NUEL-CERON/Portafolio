@@ -2,7 +2,7 @@
 
 <div align="center">
 <a href="https://porfolio.dev/">
-<img src="readmi.jpg">
+<img src="./public/readmi.jpg">
 </a>
 <p></p>
 </div>
@@ -17,4 +17,3 @@
 ![GitHub issues](https://img.shields.io/github/issues/midudev/porfolio.dev)
 
 </div>
-
